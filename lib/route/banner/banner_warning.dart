@@ -89,7 +89,7 @@ class BannerWarningRouteState extends State<BannerWarningRoute> with TickerProvi
                             children: [
                               Spacer(),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("TURN ON WIFI", style: TextStyle(color: Colors.orange[600]),),
                                 onPressed: (){
                                   togglePanel();

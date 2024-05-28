@@ -75,7 +75,7 @@ class DialogAboutRouteState extends State<DialogAboutRoute>{
                     Container(
                       width: double.infinity, height: 40,
                       child: TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("OUR PORTFOLIO", style: TextStyle(color: MyColors.accentDark)),
                         onPressed: (){
                           Tools.directUrl("http://portfolio.dream-space.web.id/");
@@ -85,7 +85,7 @@ class DialogAboutRouteState extends State<DialogAboutRoute>{
                     Container(
                       width: double.infinity, height: 45,
                       child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(primary: MyColors.primary, elevation: 0),
+                        style: ElevatedButton.styleFrom(backgroundColor: MyColors.primary, elevation: 0),
                         child: Text("PURCHASE SOURCE CODE", style: MyText.body2(context)!.copyWith(color: Colors.white)),
                         onPressed: (){
                           Tools.directUrl("https://codecanyon.net/item/materialx-flutter-flutter-material-design-ui-components-10/26232732");

@@ -62,7 +62,7 @@ class ItemTile extends StatelessWidget {
                   Container(height: 30,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black.withOpacity(0.1),
+                        backgroundColor: Colors.black.withOpacity(0.1),
                         padding: EdgeInsets.symmetric(horizontal: 35),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),

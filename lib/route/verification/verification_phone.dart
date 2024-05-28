@@ -86,7 +86,7 @@ class VerificationPhoneRouteState extends State<VerificationPhoneRoute> {
                         width: double.infinity,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.red[300],
+                            backgroundColor: Colors.red[300],
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(18.0)
                             )
@@ -98,7 +98,7 @@ class VerificationPhoneRouteState extends State<VerificationPhoneRoute> {
                       Container(
                         width: 200,
                         child: TextButton(
-                          style: TextButton.styleFrom(primary: Colors.transparent),
+                          style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                           child: Text("NO, OTHER TIME", style: TextStyle(color: MyColors.grey_40)),
                           onPressed: (){},
                         ),

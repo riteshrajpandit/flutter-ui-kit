@@ -54,12 +54,12 @@ class CardBasicRouteState extends State<CardBasicRoute> {
                   Row(
                     children: <Widget>[
                       TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("SHARE", style: TextStyle(color: MyColors.accent),),
                         onPressed: (){},
                       ),
                       TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("EXPLORE", style: TextStyle(color: MyColors.accent),),
                         onPressed: (){},
                       )
@@ -237,7 +237,7 @@ class CardBasicRouteState extends State<CardBasicRoute> {
                     ),
                   ),
                   TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent),
+                    style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                     child: Text("LISTEN NOW", style: TextStyle(color: Colors.white),),
                     onPressed: (){},
                   ),

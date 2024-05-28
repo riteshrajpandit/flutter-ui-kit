@@ -212,7 +212,7 @@ class DialogNotificationRouteState extends State<DialogNotificationRoute>{
                     minWidth: 10,
                     child: TextButton(
                       child: Text("DELETE", style: TextStyle(color: MyColors.grey_60)),
-                      style: TextButton.styleFrom(primary: Colors.transparent),
+                      style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                       onPressed: (){
                         db.deleteNotification(widget.notif.id).then((value){
                           onDeleteClicked();
@@ -224,7 +224,7 @@ class DialogNotificationRouteState extends State<DialogNotificationRoute>{
                   ButtonTheme(
                     minWidth: 10,
                     child: TextButton(
-                      style: TextButton.styleFrom(primary: Colors.transparent),
+                      style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                       child: Text(buttonText, style: TextStyle(color: MyColors.primary)),
                       onPressed: (){
                         if(n.type == "LINK"){

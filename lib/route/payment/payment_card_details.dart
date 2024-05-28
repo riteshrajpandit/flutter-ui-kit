@@ -182,7 +182,7 @@ class PaymentCardDetailsRouteState extends State<PaymentCardDetailsRoute> {
                   Container(
                     width: double.infinity,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.amber[900], elevation: 0),
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.amber[900], elevation: 0),
                       child: Text("CONTINUE", style: TextStyle(color: Colors.white),),
                       onPressed: (){},
                     ),

@@ -78,7 +78,7 @@ class BannerSmallSuccessRouteState extends State<BannerSmallSuccessRoute> with T
                 )),
                 Container(height: 15),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("SHOW / HIDE", style: TextStyle(color: Colors.lightGreen),),
                   onPressed: (){
                     togglePanel();
@@ -105,7 +105,7 @@ class BannerSmallSuccessRouteState extends State<BannerSmallSuccessRoute> with T
                           Text("Download successfully", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
                           Spacer(),
                           TextButton(
-                            style: TextButton.styleFrom(primary: Colors.transparent),
+                            style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                             child: Text("DISMISS", style: TextStyle(color: Colors.white),),
                             onPressed: (){
                               togglePanel();

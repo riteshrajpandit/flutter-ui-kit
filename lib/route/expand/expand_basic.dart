@@ -106,8 +106,7 @@ class ExpandBasicRouteState extends State<ExpandBasicRoute> with TickerProviderS
                       Spacer(),
                       TextButton(
                         style: TextButton.styleFrom(
-                            primary: Colors.transparent,
-                            padding: EdgeInsets.all(0)
+                            foregroundColor: Colors.transparent, padding: EdgeInsets.all(0)
                         ),
                         child: Text("HIDE", style: TextStyle(color: Colors.grey[800]),),
                         onPressed: (){togglePanel1();},
@@ -210,12 +209,12 @@ class ExpandBasicRouteState extends State<ExpandBasicRoute> with TickerProviderS
                     children: <Widget>[
                       Spacer(),
                       TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent, padding: EdgeInsets.all(0)),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent, padding: EdgeInsets.all(0)),
                         child: Text("HIDE", style: TextStyle(color: Colors.grey[800]),),
                         onPressed: (){togglePanel2();},
                       ),
                       TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent, padding: EdgeInsets.all(0)),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent, padding: EdgeInsets.all(0)),
                         child: Text("SAVE", style: TextStyle(color: MyColors.accent)),
                         onPressed: (){togglePanel2();},
                       ),

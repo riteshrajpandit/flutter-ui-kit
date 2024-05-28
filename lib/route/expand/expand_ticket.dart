@@ -202,7 +202,7 @@ class ExpandTicketRouteState extends State<ExpandTicketRoute> with TickerProvide
                             children: <Widget>[
                               Spacer(),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("HIDE", style: TextStyle(color: Colors.grey[800]),),
                                 onPressed: (){togglePanel1();},
                               ),

@@ -71,7 +71,7 @@ class VerificationImageRouteState extends State<VerificationImageRoute> {
                   ),
                   Container(height: 15),
                   TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent),
+                    style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                     child: Text("RESEND", style: TextStyle(color: Colors.white)),
                     onPressed: () {},
                   ),
@@ -79,7 +79,7 @@ class VerificationImageRouteState extends State<VerificationImageRoute> {
                     width: 200,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.amber,
+                        backgroundColor: Colors.amber,
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(18.0)
                         )
@@ -91,7 +91,7 @@ class VerificationImageRouteState extends State<VerificationImageRoute> {
                   Container(
                     width: double.infinity, height: 20,
                     child: TextButton(
-                      style: TextButton.styleFrom(primary: Colors.transparent),
+                      style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                       child: Text("Already have an account? Sign In", style: TextStyle(color: Colors.white),),
                       onPressed: () {},
                     ),

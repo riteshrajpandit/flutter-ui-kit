@@ -88,7 +88,7 @@ class BannerDarkRouteState extends State<BannerDarkRoute> with TickerProviderSta
                             children: [
                               Spacer(),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("TURN ON WIFI", style: TextStyle(color: Colors.orange[900])),
                                 onPressed: (){
                                   togglePanel();

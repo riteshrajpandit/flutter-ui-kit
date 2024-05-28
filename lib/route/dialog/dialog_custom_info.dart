@@ -88,7 +88,7 @@ class CustomEventDialogState extends State<CustomEventDialog>{
                     Container(height: 10),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.lightGreen[500], elevation: 0,
+                        backgroundColor: Colors.lightGreen[500], elevation: 0,
                         padding: EdgeInsets.symmetric(vertical: 0, horizontal: 40),
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(18.0)

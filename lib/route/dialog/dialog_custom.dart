@@ -30,7 +30,7 @@ class DialogCustomRouteState extends State<DialogCustomRoute> {
         alignment: Alignment.center,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: Colors.pink, elevation: 0,
+            backgroundColor: Colors.pink, elevation: 0,
             padding: EdgeInsets.symmetric(vertical: 0, horizontal: 25),
             shape: RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(18.0)

@@ -75,14 +75,14 @@ class BannerBasicRouteState extends State<BannerBasicRoute> with TickerProviderS
                             children: [
                               Spacer(),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("FIX", style: TextStyle(color: MyColors.primary),),
                                 onPressed: (){
                                   togglePanel();
                                 },
                               ),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("LEARN MORE", style: TextStyle(color: MyColors.primary),),
                                 onPressed: (){
                                   togglePanel();

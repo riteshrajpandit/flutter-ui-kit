@@ -42,7 +42,7 @@ class SeekbarColorPickerRouteState extends State<SeekbarColorPickerRoute> {
           children: [
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.pink, elevation: 0,
+                backgroundColor: Colors.pink, elevation: 0,
                 padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                 shape: RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(30)

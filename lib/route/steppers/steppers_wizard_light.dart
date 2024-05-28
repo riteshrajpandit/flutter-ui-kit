@@ -69,7 +69,7 @@ class SteppersWizardLightRouteState extends State<SteppersWizardLightRoute> {
             width: double.infinity, height: 50,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  primary: MyColors.grey_10, elevation: 0,
+                  backgroundColor: MyColors.grey_10, elevation: 0,
                   shape: RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(18.0)
                   )

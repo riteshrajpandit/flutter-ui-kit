@@ -59,14 +59,14 @@ void showSheet(context) {
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               new TextButton(
-                style: TextButton.styleFrom(primary: Colors.transparent,),
+                style: TextButton.styleFrom(foregroundColor: Colors.transparent,),
                 onPressed: (){
                   Navigator.pop(context);
                 },
                 child: new Text("CLOSE", style: TextStyle(color: Colors.pink[500])),
               ),
               new ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.blue[700],),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue[700],),
                 onPressed: (){},
                 child: new Text("DETAILS", style: TextStyle(color: Colors.white)),
               )

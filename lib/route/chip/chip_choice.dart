@@ -106,7 +106,7 @@ class ChipChoiceRouteState extends State<ChipChoiceRoute> {
                     margin: EdgeInsets.symmetric(horizontal: 15),
                     width: double.infinity, height: 40,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: MyColors.primary),
+                      style: ElevatedButton.styleFrom(backgroundColor: MyColors.primary),
                       child: Text("ADD TO CART", style: MyText.body2(context)!.copyWith(color: Colors.white)),
                       onPressed: (){ },
                     ),

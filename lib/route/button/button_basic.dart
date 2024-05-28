@@ -26,20 +26,20 @@ class ButtonBasicRouteState extends State<ButtonBasicRoute> {
                 Spacer(),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.grey[300]
+                    backgroundColor: Colors.grey[300]
                   ),
                   child: Text("NORMAL", style: TextStyle(color: Colors.grey[800])),
                   onPressed: (){},
                 ),
                 Spacer(),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(onPrimary: Colors.blue[700]),
+                  style: ElevatedButton.styleFrom(foregroundColor: Colors.blue[700]),
                   child: Text("PRIMARY", style: TextStyle(color: Colors.white)),
                   onPressed: (){},
                 ),
                 Spacer(),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.pink),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.pink),
                   child: Text("ACCENT", style: TextStyle(color: Colors.white),),
                   onPressed: (){},
                 ),
@@ -50,19 +50,19 @@ class ButtonBasicRouteState extends State<ButtonBasicRoute> {
               children: <Widget>[
                 Spacer(),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("NORMAL", style: TextStyle(color: Colors.grey[800]),),
                   onPressed: (){},
                 ),
                 Spacer(),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("PRIMARY", style: TextStyle(color: MyColors.primary),),
                   onPressed: (){},
                 ),
                 Spacer(),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("ACCENT", style: TextStyle(color: MyColors.accent),),
                   onPressed: (){},
                 ),
@@ -74,12 +74,12 @@ class ButtonBasicRouteState extends State<ButtonBasicRoute> {
                 Spacer(),
                 ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
-                      if (states.contains(MaterialState.disabled)) return Colors.grey[300];
+                    backgroundColor: WidgetStateProperty.resolveWith<Color?>((Set<WidgetState> states) {
+                      if (states.contains(WidgetState.disabled)) return Colors.grey[300];
                       return null;
                     }),
-                    foregroundColor: MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
-                      if (states.contains(MaterialState.disabled)) return Colors.grey[400];
+                    foregroundColor: WidgetStateProperty.resolveWith<Color?>((Set<WidgetState> states) {
+                      if (states.contains(WidgetState.disabled)) return Colors.grey[400];
                       return null;
                     }),
                   ),
@@ -88,13 +88,13 @@ class ButtonBasicRouteState extends State<ButtonBasicRoute> {
                 ),
                 Spacer(),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.white),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
                   child: Text("PRIMARY", style: TextStyle(color: MyColors.primary),),
                   onPressed: (){},
                 ),
                 Spacer(),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.white),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
                   child: Text("ACCENT", style: TextStyle(color: MyColors.accent),),
                   onPressed: (){},
                 ),

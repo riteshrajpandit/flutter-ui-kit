@@ -93,7 +93,7 @@ class CardWizardRouteState extends State<CardWizardRoute> {
                         Container(
                           width: double.infinity, height: 50,
                           child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(primary: Colors.lightGreen[600], elevation: 0),
+                            style: ElevatedButton.styleFrom(backgroundColor: Colors.lightGreen[600], elevation: 0),
                             child: Text(isLast ? "Get Started" : "Next", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
                             onPressed: (){
                               if(isLast){

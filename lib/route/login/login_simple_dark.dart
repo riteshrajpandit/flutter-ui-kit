@@ -66,7 +66,7 @@ class LoginSimpleDarkRouteState extends State<LoginSimpleDarkRoute> {
               children: <Widget>[
                 Spacer(),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent,),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent,),
                   child: Text("Forgot Password?", style: TextStyle(color: Colors.blueGrey[400]),),
                   onPressed: () {},
                 )
@@ -77,7 +77,7 @@ class LoginSimpleDarkRouteState extends State<LoginSimpleDarkRoute> {
               height: 40,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.green[300],
+                  backgroundColor: Colors.green[300],
                   shape: RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(20)
                   ),
@@ -89,7 +89,7 @@ class LoginSimpleDarkRouteState extends State<LoginSimpleDarkRoute> {
             Container(
               width: double.infinity,
               child: TextButton(
-                style: TextButton.styleFrom(primary: Colors.transparent),
+                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                 child: Text("New user? Sign Up", style: TextStyle(color: Colors.green[300]),),
                 onPressed: () {},
               ),

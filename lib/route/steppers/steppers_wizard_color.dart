@@ -52,7 +52,7 @@ class SteppersWizardColorRouteState extends State<SteppersWizardColorRoute> {
                     ButtonTheme(
                       minWidth: 10,
                       child: TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("SKIP", style: MyText.subhead(context)!.copyWith(
                             color: Colors.white, fontWeight: FontWeight.w500
                         )),
@@ -72,7 +72,7 @@ class SteppersWizardColorRouteState extends State<SteppersWizardColorRoute> {
                         width: 100,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              primary: Colors.white, elevation: 0,
+                              backgroundColor: Colors.white, elevation: 0,
                               shape: RoundedRectangleBorder(
                                   borderRadius: new BorderRadius.circular(18.0)
                               )

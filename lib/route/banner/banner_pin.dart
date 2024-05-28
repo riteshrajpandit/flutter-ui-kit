@@ -98,7 +98,7 @@ class BannerPinRouteState extends State<BannerPinRoute> with TickerProviderState
                             children: [
                               Spacer(),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("TURN ON WIFI", style: TextStyle(color: MyColors.primaryDark),),
                                 onPressed: (){
                                   togglePanel();

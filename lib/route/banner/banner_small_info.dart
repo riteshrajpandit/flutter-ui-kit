@@ -77,7 +77,7 @@ class BannerSmallInfoRouteState extends State<BannerSmallInfoRoute> with TickerP
                 )),
                 Container(height: 15),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("SHOW / HIDE", style: TextStyle(color: Colors.blue),),
                   onPressed: (){
                     togglePanel();
@@ -104,7 +104,7 @@ class BannerSmallInfoRouteState extends State<BannerSmallInfoRoute> with TickerP
                           Text("You are offline.", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
                           Spacer(),
                           TextButton(
-                            style: TextButton.styleFrom(primary: Colors.transparent),
+                            style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                             child: Text("TURN ON WIFI", style: TextStyle(color: Colors.white),),
                             onPressed: (){
                               togglePanel();

@@ -71,7 +71,7 @@ class FormLoginRouteState extends State<FormLoginRoute> {
                     width: double.infinity,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: MyColors.accent, elevation: 0,
+                          backgroundColor: MyColors.accent, elevation: 0,
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(18.0)
                           )

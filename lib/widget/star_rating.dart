@@ -22,7 +22,7 @@ class StarRating extends StatelessWidget {
     if (index >= rating) {
       icon = new Icon(
         Icons.star_border,
-        color: Theme.of(context).buttonColor,
+        color: Theme.of(context).colorScheme.primary,
         size: size,
       );
     } else if (index > rating - 1 && index < rating) {
@@ -39,7 +39,7 @@ class StarRating extends StatelessWidget {
       );
     }
     return new InkResponse(
-      onTap: onRatingChanged == null ? null : () => onRatingChanged!(index + 1.0),
+      onTap: onRatingChanged == null ? null : () => onRatingChanged!((index + 1).toDouble()),
       child: icon,
     );
   }

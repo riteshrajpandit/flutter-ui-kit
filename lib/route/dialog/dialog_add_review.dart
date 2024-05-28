@@ -122,14 +122,14 @@ class AddPostDialogState extends State<AddPostDialog>{
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   new TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent),
+                    style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                     onPressed: (){
                       Navigator.pop(context);
                     },
                     child: Text("CLOSE", style: TextStyle(color: Colors.pink[500])),
                   ),
                   TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent),
+                    style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                     child: Text("SUBMIT", style: TextStyle(color: Colors.black)),
                     onPressed: (){},
                   )

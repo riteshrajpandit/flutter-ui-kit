@@ -64,7 +64,7 @@ class LoginSimpleLightRouteState extends State<LoginSimpleLightRoute> {
               children: <Widget>[
                 Spacer(),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("Forgot Password?", style: TextStyle(color: Colors.purpleAccent[400]),),
                   onPressed: () {},
                 )
@@ -73,7 +73,7 @@ class LoginSimpleLightRouteState extends State<LoginSimpleLightRoute> {
             Container(
               width: double.infinity,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.purpleAccent[400], elevation: 0),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.purpleAccent[400], elevation: 0),
                 child: Text("Login", style: TextStyle(color: Colors.white)),
                 onPressed: () {},
               ),
@@ -81,7 +81,7 @@ class LoginSimpleLightRouteState extends State<LoginSimpleLightRoute> {
             Container(
               width: double.infinity,
               child: TextButton(
-                style: TextButton.styleFrom(primary: Colors.transparent),
+                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                 child: Text("New user? Sign Up", style: TextStyle(color: Colors.purpleAccent[400])),
                 onPressed: () {},
               ),

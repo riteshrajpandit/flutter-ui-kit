@@ -85,7 +85,7 @@ class LoginImageTealRouteState extends State<LoginImageTealRoute> {
                 Container(
                   width: double.infinity,
                   child: TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent,),
+                    style: TextButton.styleFrom(foregroundColor: Colors.transparent,),
                     child: Text("Sign up for an account?", style: TextStyle(color: Colors.white),),
                     onPressed: () {},
                   ),

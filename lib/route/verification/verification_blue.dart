@@ -61,7 +61,7 @@ class VerificationBlueRouteState extends State<VerificationBlueRoute> {
                   Text("Already a member?", style: TextStyle(color: Colors.white)),
                   Container(height: 30,
                     child: TextButton(
-                      style: TextButton.styleFrom(primary: Colors.transparent),
+                      style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                       child: Text("Log In",
                           style: MyText.subhead(context)!.copyWith(color: Colors.white, fontWeight: FontWeight.bold)
                       ),

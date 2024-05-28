@@ -84,9 +84,8 @@ class ProfilePolygonRouteState extends State<ProfilePolygonRoute> {
                 Container(height: 25),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      padding: EdgeInsets.symmetric(horizontal: 30),
-                      primary: MyColors.accent
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent,
+                      padding: EdgeInsets.symmetric(horizontal: 30)
                   ),
                   child: Text("FOLLOW", style: TextStyle(color: Colors.white)),
                   onPressed: (){},

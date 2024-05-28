@@ -146,7 +146,7 @@ class FormSignUpCardStackRouteState extends State<FormSignUpCardStackRoute> {
               margin: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
               width: double.infinity, height: 45,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.deepOrange, elevation: 1),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.deepOrange, elevation: 1),
                 child: Text("CREATE ACCOUNT", style: MyText.body2(context)!.copyWith(color: Colors.white)),
                 onPressed: (){ },
               ),

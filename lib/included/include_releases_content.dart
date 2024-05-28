@@ -21,7 +21,7 @@ class IncludeReleasesContent {
                   ButtonTheme(
                     minWidth: 10,
                     child: TextButton(
-                      style: TextButton.styleFrom( primary: Colors.transparent ),
+                      style: TextButton.styleFrom( foregroundColor: Colors.transparent ),
                       child: Text("MORE", style: MyText.subhead(context)!.copyWith(
                           color: Colors.grey[600], fontWeight: FontWeight.w500
                       )),
@@ -121,7 +121,7 @@ class IncludeReleasesContent {
                   ButtonTheme(
                     minWidth: 10,
                     child: TextButton(
-                      style: TextButton.styleFrom( primary: Colors.transparent ),
+                      style: TextButton.styleFrom( foregroundColor: Colors.transparent ),
                       child: Text("MORE", style: MyText.subhead(context)!.copyWith(
                           color: Colors.grey[600], fontWeight: FontWeight.w500
                       )),
@@ -211,7 +211,7 @@ class IncludeReleasesContent {
                   ButtonTheme(
                     minWidth: 10,
                     child: TextButton(
-                      style: TextButton.styleFrom( primary: Colors.transparent ),
+                      style: TextButton.styleFrom( foregroundColor: Colors.transparent ),
                       child: Text("MORE", style: MyText.subhead(context)!.copyWith(
                           color: Colors.grey[600], fontWeight: FontWeight.w500
                       )),

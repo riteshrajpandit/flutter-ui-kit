@@ -58,12 +58,12 @@ class CardOutlinedRouteState extends State<CardOutlinedRoute> {
                   Row(
                     children: <Widget>[
                       TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("SHARE", style: TextStyle(color: MyColors.accent),),
                         onPressed: (){},
                       ),
                       TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("EXPLORE", style: TextStyle(color: MyColors.accent),),
                         onPressed: (){},
                       )

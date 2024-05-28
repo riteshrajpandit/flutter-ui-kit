@@ -261,7 +261,7 @@ class FormEcommerceRouteState extends State<FormEcommerceRoute> {
                 Container(
                   width: double.infinity, height: 45,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Colors.lightGreen, elevation: 0),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.lightGreen, elevation: 0),
                     child: Text("SUBMIT", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
                     onPressed: (){ },
                   ),

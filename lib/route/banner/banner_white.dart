@@ -81,14 +81,14 @@ class BannerWhiteRouteState extends State<BannerWhiteRoute> with TickerProviderS
                             children: [
                               Spacer(),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("VIEW", style: TextStyle(color: MyColors.grey_80),),
                                 onPressed: (){
                                   togglePanel();
                                 },
                               ),
                               TextButton(
-                                style: TextButton.styleFrom(primary: Colors.transparent),
+                                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                 child: Text("DISMISS", style: TextStyle(color: MyColors.grey_80),),
                                 onPressed: (){
                                   togglePanel();

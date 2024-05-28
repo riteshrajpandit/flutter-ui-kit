@@ -112,7 +112,7 @@ class VerificationOrangeRouteState extends State<VerificationOrangeRoute> {
                   Text("I didn't receive the code", style: TextStyle(color: Colors.white)),
                   Container(height: 30,
                     child: TextButton(
-                      style: TextButton.styleFrom(primary: Colors.transparent),
+                      style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                       child: Text("Please Re-Send", style: MyText.subhead(context)!.copyWith(color: Colors.white, fontWeight: FontWeight.bold)),
                       onPressed: () {},
                     ),

@@ -212,14 +212,14 @@ class CustomHeaderDialogState extends State<CustomHeaderDialog> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
                         new TextButton(
-                          style: TextButton.styleFrom(primary: Colors.transparent),
+                          style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                           child: Text("DECLINE", style: TextStyle(color: MyColors.accent)),
                           onPressed: () {
                             Navigator.pop(context);
                           },
                         ),
                         TextButton(
-                          style: TextButton.styleFrom(primary: Colors.transparent),
+                          style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                           child: Text("JOIN", style: TextStyle(color: MyColors.primary)),
                           onPressed: () {
                             Navigator.pop(context);

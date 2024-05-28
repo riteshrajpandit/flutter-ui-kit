@@ -204,7 +204,7 @@ class FormSignUpImageOutlineRouteState extends State<FormSignUpImageOutlineRoute
                     Container(
                       width: double.infinity, height: 45,
                       child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(primary: Colors.white.withOpacity(0.6), elevation: 0),
+                        style: ElevatedButton.styleFrom(backgroundColor: Colors.white.withOpacity(0.6), elevation: 0),
                         child: Text("SUBMIT", style: MyText.body2(context)!.copyWith(color: Colors.black)),
                         onPressed: (){ },
                       ),

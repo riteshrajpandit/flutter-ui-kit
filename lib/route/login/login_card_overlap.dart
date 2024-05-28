@@ -79,7 +79,7 @@ class LoginCardOverlapRouteState extends State<LoginCardOverlapRoute> {
                         height: 40,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            primary: MyColors.primary,
+                            backgroundColor: MyColors.primary,
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(20)
                             ),
@@ -91,7 +91,7 @@ class LoginCardOverlapRouteState extends State<LoginCardOverlapRoute> {
                       Container(
                         width: double.infinity,
                         child: TextButton(
-                          style: TextButton.styleFrom(primary: Colors.transparent),
+                          style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                           child: Text("New user? Sign Up", style: TextStyle(color: MyColors.primaryLight),),
                           onPressed: () {},
                         ),

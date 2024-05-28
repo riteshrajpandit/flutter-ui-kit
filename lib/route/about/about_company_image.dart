@@ -56,8 +56,7 @@ class AboutCompanyImageRouteState extends State<AboutCompanyImageRoute> {
                       children: <Widget>[
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
-                            primary: MyColors.primary, elevation: 0
+                            padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20), backgroundColor: MyColors.primary, elevation: 0
                           ),
                           child: Text("CONTACT US", style: TextStyle(color: Colors.white),),
                           onPressed: (){},

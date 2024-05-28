@@ -97,11 +97,10 @@ class BottomSheetFloatingRouteState extends State<BottomSheetFloatingRoute> {
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 25),
+                      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 25), backgroundColor: MyColors.accent,
                       shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      primary: MyColors.accent, elevation: 0
+                      ), elevation: 0
                     ),
                     child: Text("SUBMIT RATING", style: TextStyle(color: Colors.white)),
                     onPressed: (){},

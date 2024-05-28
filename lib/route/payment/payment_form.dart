@@ -100,7 +100,7 @@ class PaymentFormRouteState extends State<PaymentFormRoute> {
               padding: EdgeInsets.symmetric(horizontal: 15),
               width: double.infinity, height: 45,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.orange),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
                 child: Text("Add Card", style: MyText.medium(context).copyWith(color: Colors.white)),
                 onPressed: (){},
               ),

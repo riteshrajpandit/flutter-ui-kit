@@ -127,12 +127,12 @@ class GdprBasicDialogState extends State<GdprBasicDialog>{
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("DECLINE", style: TextStyle(color: Colors.teal[500])),
                   onPressed: (){ Navigator.pop(context); },
                 ),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("ACCEPT", style: TextStyle(color: Colors.teal[500])),
                   onPressed: (){ Navigator.pop(context); },
                 )

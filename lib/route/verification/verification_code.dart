@@ -109,7 +109,7 @@ class VerificationCodeRouteState extends State<VerificationCodeRoute> {
                       Container(
                         width: 200,
                         child: TextButton(
-                          style: TextButton.styleFrom(primary: Colors.transparent),
+                          style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                           child: Text("VERIFY", style: TextStyle(color: MyColors.primary),),
                           onPressed: (){},
                         ),

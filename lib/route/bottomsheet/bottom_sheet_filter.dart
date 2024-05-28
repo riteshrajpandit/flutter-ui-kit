@@ -326,7 +326,7 @@ void showSheet(context) {
                       child:  SizedBox(
                         width: double.infinity, // match_parent
                         child:  ElevatedButton(
-                          style: ElevatedButton.styleFrom(primary: Colors.black,),
+                          style: ElevatedButton.styleFrom(backgroundColor: Colors.black,),
                           child: Text("SEARCH", style: TextStyle(color: Colors.white),),
                           onPressed: (){},
                         ),

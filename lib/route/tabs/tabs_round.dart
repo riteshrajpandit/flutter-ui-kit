@@ -67,8 +67,7 @@ class TabsRoundRouteState extends State<TabsRoundRoute> {
                   Container(width: 10),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      primary: MyColors.accent, elevation: 1
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent, elevation: 1
                     ),
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 15),
@@ -79,8 +78,7 @@ class TabsRoundRouteState extends State<TabsRoundRoute> {
                   Container(width: 10),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      primary: MyColors.accent, elevation: 1
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent, elevation: 1
                     ),
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 15),
@@ -91,8 +89,7 @@ class TabsRoundRouteState extends State<TabsRoundRoute> {
                   Container(width: 10),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      primary: MyColors.accent, elevation: 1
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent, elevation: 1
                     ),
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 15),
@@ -103,8 +100,7 @@ class TabsRoundRouteState extends State<TabsRoundRoute> {
                   Container(width: 10),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      primary: MyColors.accent, elevation: 1
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent, elevation: 1
                     ),
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 15),
@@ -115,8 +111,7 @@ class TabsRoundRouteState extends State<TabsRoundRoute> {
                   Container(width: 10),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      primary: MyColors.accent, elevation: 1
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent, elevation: 1
                     ),
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 15),

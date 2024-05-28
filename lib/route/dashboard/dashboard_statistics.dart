@@ -255,7 +255,7 @@ class DashboardStatisticsRouteState extends State<DashboardStatisticsRoute> {
                     Divider(height: 0),
                     Container( width: double.infinity, padding: EdgeInsets.symmetric(vertical: 8),
                       child: TextButton(
-                        style: TextButton.styleFrom(primary: Colors.transparent),
+                        style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                         child: Text("See More", style: TextStyle(color: MyColors.primary)),
                         onPressed: () {},
                       ),

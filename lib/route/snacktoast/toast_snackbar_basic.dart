@@ -37,8 +37,7 @@ class ToastSnackbarBasicRouteState extends State<ToastSnackbarBasicRoute> {
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          primary: MyColors.accent
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent
                       ),
                       child: Text("SIMPLE", style: TextStyle(color: Colors.white)),
                       onPressed: (){ showSimpleToast(context); },
@@ -48,8 +47,7 @@ class ToastSnackbarBasicRouteState extends State<ToastSnackbarBasicRoute> {
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          primary: MyColors.accent
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent
                       ),
                       child: Text("COLORED PRIMARY", style: TextStyle(color: Colors.white)),
                       onPressed: (){showColoredPrimaryToast(context);},
@@ -59,8 +57,7 @@ class ToastSnackbarBasicRouteState extends State<ToastSnackbarBasicRoute> {
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          primary: MyColors.accent
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent
                       ),
                       child: Text("COLORED ACCENT", style: TextStyle(color: Colors.white)),
                       onPressed: (){showColoredAccentToast(context);},
@@ -75,8 +72,7 @@ class ToastSnackbarBasicRouteState extends State<ToastSnackbarBasicRoute> {
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          primary: MyColors.accent
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent
                       ),
                       child: Text("SIMPLE", style: TextStyle(color: Colors.white)),
                       onPressed: (){showSimpleSnackbar(context);},
@@ -86,8 +82,7 @@ class ToastSnackbarBasicRouteState extends State<ToastSnackbarBasicRoute> {
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          primary: MyColors.accent
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent
                       ),
                       child: Text("WITH ACTION", style: TextStyle(color: Colors.white)),
                       onPressed: (){snackBarWithAction(context);},
@@ -97,8 +92,7 @@ class ToastSnackbarBasicRouteState extends State<ToastSnackbarBasicRoute> {
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          primary: MyColors.accent
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), backgroundColor: MyColors.accent
                       ),
                       child: Text("WITH ACTION INDEFINITE", style: TextStyle(color: Colors.white)),
                       onPressed: (){snackBarWithActionIndefinite(context);},

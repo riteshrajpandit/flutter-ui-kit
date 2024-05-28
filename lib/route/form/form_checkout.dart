@@ -160,7 +160,7 @@ class FormCheckoutRouteState extends State<FormCheckoutRoute> {
                 Container(
                   width: double.infinity, height: 45,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: MyColors.primary, elevation: 0),
+                    style: ElevatedButton.styleFrom(backgroundColor: MyColors.primary, elevation: 0),
                     child: Text("PROCESS", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
                     onPressed: (){ },
                   ),

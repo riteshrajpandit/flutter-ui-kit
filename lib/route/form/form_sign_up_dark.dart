@@ -198,7 +198,7 @@ class FormSignUpDarkRouteState extends State<FormSignUpDarkRoute> {
                 Container(
                   width: double.infinity, height: 40,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Colors.orange[600], elevation: 0),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.orange[600], elevation: 0),
                     child: Text("SUBMIT", style: MyText.body2(context)!.copyWith(color: Colors.white)),
                     onPressed: (){ },
                   ),

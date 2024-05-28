@@ -34,10 +34,9 @@ class PickerTimeLightRouteState extends State<PickerTimeLightRoute> {
           Align(
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  elevation: 0,
+                  elevation: 0, backgroundColor: MyColors.accent,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  primary: MyColors.accent
+                  padding: EdgeInsets.symmetric(horizontal: 30)
               ),
               child: Text("PICK TIME", style: TextStyle(color: Colors.white)),
               onPressed: (){

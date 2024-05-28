@@ -89,7 +89,7 @@ class FormSignUpRouteState extends State<FormSignUpRoute> {
                     width: double.infinity,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: MyColors.accent,
+                          backgroundColor: MyColors.accent,
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(18.0)
                           )
@@ -102,7 +102,7 @@ class FormSignUpRouteState extends State<FormSignUpRoute> {
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.blue[800], elevation: 0,
+                        backgroundColor: Colors.blue[800], elevation: 0,
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(18.0)
                         )

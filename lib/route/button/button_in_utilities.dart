@@ -32,7 +32,7 @@ class ButtonInUtilitiesRouteState extends State<ButtonInUtilitiesRoute> {
                       children: <Widget>[
                         Icon(Icons.contacts, color: MyColors.primary, size: 24,),
                         Container(width: 25,),
-                        Text("Morning Pizza", style: Theme.of(context).textTheme.headline6),
+                        Text("Morning Pizza", style: Theme.of(context).textTheme.titleLarge),
                       ],
                     ),
                   ),
@@ -40,13 +40,13 @@ class ButtonInUtilitiesRouteState extends State<ButtonInUtilitiesRoute> {
                     children: <Widget>[
                       Container(width: 75,),
                       ElevatedButton(
-                        style: ElevatedButton.styleFrom(primary: Colors.white),
+                        style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
                         child: Text("FORCE STOP", style: TextStyle(color: Colors.black)),
                         onPressed: (){},
                       ),
                       Container(width: 10,),
                       ElevatedButton(
-                        style: ElevatedButton.styleFrom(primary: Colors.pink[300]),
+                        style: ElevatedButton.styleFrom(backgroundColor: Colors.pink[300]),
                         child: Text("UNINSTALL", style: TextStyle(color: Colors.white),),
                         onPressed: (){},
                       )

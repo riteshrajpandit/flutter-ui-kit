@@ -74,7 +74,7 @@ class LoginCardLightRouteState extends State<LoginCardLightRoute> {
                               children: <Widget>[
                                 Spacer(),
                                 TextButton(
-                                  style: TextButton.styleFrom(primary: Colors.transparent),
+                                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                                   child: Text("Forgot Password?", style: TextStyle(color: MyColors.grey_20)),
                                   onPressed: () {},
                                 )
@@ -92,7 +92,7 @@ class LoginCardLightRouteState extends State<LoginCardLightRoute> {
           Container(
             width: double.infinity, height: 55,
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.blue[600], elevation: 0),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue[600], elevation: 0),
               child: Text("SIGNIN", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
               onPressed: (){ },
             ),

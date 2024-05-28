@@ -84,7 +84,7 @@ class AddPostDialogState extends State<AddPostDialog>{
                   ButtonTheme(
                     minWidth: 10,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.grey[300], elevation: 0),
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.grey[300], elevation: 0),
                       child: Text("POST", style: MyText.subhead(context)!.copyWith(
                           color: Colors.black, fontWeight: FontWeight.w500
                       )),

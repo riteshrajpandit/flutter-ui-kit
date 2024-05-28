@@ -129,7 +129,7 @@ class VerificationHeaderRouteState extends State<VerificationHeaderRoute> {
                 width: 200,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.red[300],
+                    backgroundColor: Colors.red[300],
                     shape: RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(18.0)
                   )),
@@ -140,7 +140,7 @@ class VerificationHeaderRouteState extends State<VerificationHeaderRoute> {
               Container(
                 width: 200,
                 child: TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("RESEND CODE", style: TextStyle(color: MyColors.grey_40),),
                   onPressed: (){},
                 ),

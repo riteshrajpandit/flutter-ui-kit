@@ -56,7 +56,7 @@ class CardWizardOverlapRouteState extends State<CardWizardOverlapRoute> {
                 width: double.infinity, height: 50,
                 margin: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10),
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Colors.lightGreen[600], elevation: 0),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.lightGreen[600], elevation: 0),
                     child: Text(isLast ? "GET STARTED" : "NEXT", style: MyText.subhead(context)!.copyWith(color: Colors.white,fontWeight: FontWeight.bold)),
                     onPressed: (){
                       if(isLast){

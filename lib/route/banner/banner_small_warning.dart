@@ -77,7 +77,7 @@ class BannerSmallWarningRouteState extends State<BannerSmallWarningRoute> with T
                 )),
                 Container(height: 15),
                 TextButton(
-                  style: TextButton.styleFrom(primary: Colors.transparent),
+                  style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                   child: Text("SHOW / HIDE", style: TextStyle(color: Colors.red[600]),),
                   onPressed: (){
                     togglePanel();
@@ -104,7 +104,7 @@ class BannerSmallWarningRouteState extends State<BannerSmallWarningRoute> with T
                           Text("Ops, you are offline.", style: MyText.subhead(context)!.copyWith(color: Colors.white)),
                           Spacer(),
                           TextButton(
-                            style: TextButton.styleFrom(primary: Colors.transparent),
+                            style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                             child: Text("SETTING", style: TextStyle(color: Colors.white),),
                             onPressed: (){
                               togglePanel();

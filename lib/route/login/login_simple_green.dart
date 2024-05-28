@@ -88,7 +88,7 @@ class LoginSimpleGreenRouteState extends State<LoginSimpleGreenRoute> {
               height: 40,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Colors.green[300],
+                    backgroundColor: Colors.green[300],
                     shape: RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(20)
                 )),
@@ -99,7 +99,7 @@ class LoginSimpleGreenRouteState extends State<LoginSimpleGreenRoute> {
             Container(
               width: double.infinity,
               child: TextButton(
-                style: TextButton.styleFrom(primary: Colors.transparent),
+                style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                 child: Text("SIGN UP FOR AN ACCOUNT?", style: TextStyle(color: Colors.green[300]),),
                 onPressed: () {},
               ),

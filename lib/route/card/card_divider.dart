@@ -73,7 +73,7 @@ class CardDividerRouteState extends State<CardDividerRoute> {
                           children: [
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                primary: Colors.grey[300], elevation: 0,
+                                backgroundColor: Colors.grey[300], elevation: 0,
                                 padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
                                 shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(18.0)),
                               ),
@@ -83,7 +83,7 @@ class CardDividerRouteState extends State<CardDividerRoute> {
                             Container(width: 8),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                primary: Colors.grey[300], elevation: 0,
+                                backgroundColor: Colors.grey[300], elevation: 0,
                                 padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
                                 shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(18.0)),
                               ),
@@ -93,7 +93,7 @@ class CardDividerRouteState extends State<CardDividerRoute> {
                             Container(width: 8),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                primary: Colors.grey[300], elevation: 0,
+                                backgroundColor: Colors.grey[300], elevation: 0,
                                 padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
                                 shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(18.0)),
                               ),
@@ -108,7 +108,7 @@ class CardDividerRouteState extends State<CardDividerRoute> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 10),
                     child: TextButton(
-                      style: TextButton.styleFrom(primary: Colors.transparent),
+                      style: TextButton.styleFrom(foregroundColor: Colors.transparent),
                       child: Text("RESERVE", style: TextStyle(color: MyColors.primary),),
                       onPressed: (){},
                     ),
