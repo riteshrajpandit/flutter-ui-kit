@@ -13,7 +13,7 @@ import 'utils/fcm.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  Fcm.onBackgroundMessage();
+  // Fcm.onBackgroundMessage();
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(

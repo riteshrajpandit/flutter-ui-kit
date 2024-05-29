@@ -287,7 +287,7 @@ class MenuRouteState extends State<MenuRoute> {
   static const int MAX_PRESS = 10;
   int pressCount = 0;
 
-  late Fcm _fcm;
+  // late Fcm _fcm;
 
   List menus = <Menu>[];
   GlobalKey<ScaffoldState> _scaffoldStateKey = GlobalKey<ScaffoldState>();
@@ -374,8 +374,8 @@ class MenuRouteState extends State<MenuRoute> {
   void initState() {
     super.initState();
 
-    _fcm = Fcm.configure(context);
-    _fcm.subscribe();
+    // _fcm = Fcm.configure(context);
+    // _fcm.subscribe();
 
     menus.add(Menu.divider());
 
