@@ -8,33 +8,60 @@ import 'package:materialx_flutter/utils/notification_route.dart';
 
 class PushNotification {
   static const String CHANNEL_ID_NAME = "Default";
-  static Random random = new Random();
+  static Random random = Random();
 
   BuildContext? context;
   late FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
 
   PushNotification.init(this.context){
-    flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
-    var android = new AndroidInitializationSettings('app_icon');
-    var iOS = new IOSInitializationSettings();
-    var initSettings = new InitializationSettings(android: android, iOS: iOS);
-    flutterLocalNotificationsPlugin.initialize(initSettings, onSelectNotification: _onSelectNotification);
-  }
+    flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+    var android = const AndroidInitializationSettings('app_icon');
+    var iOS = const DarwinInitializationSettings();
+    var initSettings = InitializationSettings(android: android, iOS: iOS);
 
-  Future _onSelectNotification(String? payload) async {
-    await Navigator.push(context!, MaterialPageRoute(builder: (BuildContext context){
-      Notif? notif = getNotifObject(payload!);
-      return notif == null ? ListNotificationRoute() : DialogNotificationRoute(notif, true, null);
-    }));
-  }
-
-  showNotification(Notif notif) async {
-    var android = new AndroidNotificationDetails(
-        CHANNEL_ID_NAME, CHANNEL_ID_NAME,
-        priority: Priority.high, importance: Importance.max,
+    flutterLocalNotificationsPlugin.initialize(
+      initSettings,
+      onDidReceiveNotificationResponse: _onSelectNotification, // Updated to use the correct callback
     );
-    var iOS = new IOSNotificationDetails();
-    var platform = new NotificationDetails(android: android, iOS: iOS);
+
+    _requestPermissions();
+  }
+
+  Future _onSelectNotification(NotificationResponse response) async {
+    String? payload = response.payload;
+    if (payload != null && context != null) {
+      await Navigator.push(context!, MaterialPageRoute(builder: (BuildContext context){
+        Notif? notif = getNotifObject(payload);
+        return notif == null ? ListNotificationRoute() : DialogNotificationRoute(notif, true, null);
+      }));
+    }
+  }
+
+  void _requestPermissions() {
+    flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>()
+        ?.requestPermissions(
+            alert: true,
+            badge: true,
+            sound: true,
+        );
+
+    flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<MacOSFlutterLocalNotificationsPlugin>()
+        ?.requestPermissions(
+            alert: true,
+            badge: true,
+            sound: true,
+        );
+  }
+
+  Future<void> showNotification(Notif notif) async {
+    var android = const AndroidNotificationDetails(
+      CHANNEL_ID_NAME, CHANNEL_ID_NAME,
+      priority: Priority.high, importance: Importance.max,
+    );
+    var iOS = const DarwinNotificationDetails();
+    var platform = NotificationDetails(android: android, iOS: iOS);
     await flutterLocalNotificationsPlugin.show(
       random.nextInt(1000), notif.title, notif.content,
       platform, payload: getNotifJson(notif)
@@ -52,8 +79,6 @@ class PushNotification {
   }
 
   String getNotifJson(Notif obj){
-    String json = jsonEncode(obj);
-    return json;
+    return jsonEncode(obj);
   }
-
 }
